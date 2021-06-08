@@ -24,9 +24,7 @@ function App() {
           photoUrl: userAuth.photoURL,
         }))
       } else {
-        dispatch(logout({
-
-        }));
+        dispatch(logout());
       }
     })
   }, [])
