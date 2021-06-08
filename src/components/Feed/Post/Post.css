@@ -21,13 +21,32 @@
 
 .post__body {
   overflow-wrap: anywhere;
+  padding: 10px 0;
 }
 
 .post__info > h2 {
   font-size: 15px;
 }
 
+.posts__likes {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.posts__likes__icon {
+  object-fit: contain;
+  color: white;
+  padding: 5px;
+  background-color: #0b77b7;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  margin-right: 10px;
+}
 .post__buttons {
   display: flex;
   justify-content: space-evenly;
+  border-top: 2px solid whitesmoke;
+  margin-top: 5px;
 }
