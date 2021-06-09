@@ -21,13 +21,45 @@
 
 .post__body {
   overflow-wrap: anywhere;
+  padding: 10px 0;
 }
 
 .post__info > h2 {
   font-size: 15px;
 }
 
+.posts__likes__comments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  padding: 0 30px 0 10px;
+}
+
+.posts__likes__comments > span {
+  display: flex;
+  align-items: center;
+}
+
+.posts__comments__span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.posts__likes__icon {
+  object-fit: contain;
+  color: white;
+  padding: 5px;
+  background-color: #0b77b7;
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  margin-right: 5px;
+}
+
 .post__buttons {
   display: flex;
   justify-content: space-evenly;
+  border-top: 2px solid whitesmoke;
+  margin-top: 5px;
 }

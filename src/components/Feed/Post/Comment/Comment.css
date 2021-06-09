@@ -1,0 +1,33 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.comment > div {
+  display: flex;
+}
+
+.comment__icon {
+  object-fit: contain;
+  height: 30px !important;
+  width: 30px !important;
+  margin-right: 10px;
+}
+
+.comment__text {
+  background: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.comment__text > h2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.comment__text > p {
+  font-size: 14px;
+}
