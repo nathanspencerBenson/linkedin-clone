@@ -14,8 +14,9 @@ import firebase from 'firebase';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../../../features/userSlice';
 import Comment from './Comment/Comment';
+import TimeAgo from 'react-timeago';
 
-const Post = forwardRef(({ id, name, description, message, photoUrl, likes }, ref) => {
+const Post = forwardRef(({ id, name, description, message, photoUrl, likes, timestamp }, ref) => {
     const user = useSelector(selectUser);
     const [input, setInput] = useState('');
     const [comments, setComments] = useState([]);
@@ -80,6 +81,7 @@ const Post = forwardRef(({ id, name, description, message, photoUrl, likes }, re
                     <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
+                <p className="timestamp"><TimeAgo date={String(timestamp.toDate())} style={{fontSize: '10px', color: 'gray', marginLeft: '50px'}}  /></p>
             </div>
 
             <div className="post__body">

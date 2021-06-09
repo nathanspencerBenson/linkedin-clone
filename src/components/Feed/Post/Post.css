@@ -63,3 +63,8 @@
   border-top: 2px solid whitesmoke;
   margin-top: 5px;
 }
+
+.timestamp {
+  position: absolute;
+  right: 20px;
+}
