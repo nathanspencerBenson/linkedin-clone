@@ -81,7 +81,7 @@ const Post = forwardRef(({ id, name, description, message, photoUrl, likes, time
                     <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
-                <p className="timestamp"><TimeAgo date={String(timestamp.toDate())} style={{fontSize: '10px', color: 'gray', marginLeft: '50px'}}  /></p>
+               {timestamp ? ( <p className="timestamp"><TimeAgo date={String(timestamp.toDate()) || "Just Now"} style={{fontSize: '10px', color: 'gray', marginLeft: '50px'}}  /></p>) : null}
             </div>
 
             <div className="post__body">

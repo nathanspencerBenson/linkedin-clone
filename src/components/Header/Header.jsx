@@ -10,6 +10,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../features/userSlice';
 import { auth } from '../../firebase';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,9 +34,9 @@ function Header() {
             </div>
 
             <div className="header__right">
-                <HeaderOption Icon={HomeIcon} title="Home" />
+                <Link to="/"><HeaderOption Icon={HomeIcon} title="Home" /></Link>
                 <HeaderOption Icon={SupervisorAccountIcon}  title="My Network" />
-                <HeaderOption Icon={BusinessCenterIcon}  title="Jobs" />
+                <Link to="/jobs"><HeaderOption Icon={BusinessCenterIcon}  title="Jobs" /></Link>
                 <HeaderOption Icon={ChatIcon}  title="Messaging" />
                 <HeaderOption Icon={NotificationsIcon}  title="Notifications" />
                 <HeaderOption avatar={true} title="me"
